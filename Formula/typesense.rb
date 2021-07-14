@@ -1,8 +1,8 @@
 class Typesense < Formula
   desc "Fast, typo tolerant search engine for building delightful search experiences"
   homepage "https://typesense.org"
-  url "https://github.com/typesense/typesense/archive/v0.15.0.tar.gz"
-  sha256 "d338f92e1dab2bef09c11721740d7164052d89fd9687ab4145b3a5ed887fd03e"
+  url "https://github.com/typesense/typesense/archive/refs/tags/v0.21.0.tar.gz"
+  sha256 "ca33742dc60d5bf3e25f7d5f29af10368793a73f0a156afe00b3e6f7ab56f421"
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build

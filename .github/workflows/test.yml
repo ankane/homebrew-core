@@ -1,4 +1,4 @@
-name: libpg_query
+name: typesense
 on: [push]
 
 jobs:
@@ -11,9 +11,9 @@ jobs:
       - run: cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core && git pull || true
       - run: brew tap "$GITHUB_REPOSITORY"
       - run: brew update-reset "$(brew --repository "$GITHUB_REPOSITORY")"
-      - run: brew install ankane/core/libpg_query --only-dependencies
-      - run: brew install ankane/core/libpg_query -s --verbose || true
-      - run: cat /Users/runner/Library/Logs/Homebrew/libpg_query/*
-      - run: brew test ankane/core/libpg_query --verbose
-      - run: brew audit --new-formula libpg_query
-      - run: brew audit --strict libpg_query
+      - run: brew install ankane/core/typesense --only-dependencies
+      - run: brew install ankane/core/typesense -s --verbose || true
+      - run: cat /Users/runner/Library/Logs/Homebrew/typesense/*
+      - run: brew test ankane/core/typesense --verbose
+      - run: brew audit --new-formula typesense
+      - run: brew audit --strict typesense
